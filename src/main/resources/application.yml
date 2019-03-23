@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zxd997/config-repo
+          username: zxd997
+          password: weiai997ii
+          basedir: d:/JavaProject/cloud3copy/config/basedir
+          #linux 命令 pwd 是linux的路径格式 此处用windows的
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
